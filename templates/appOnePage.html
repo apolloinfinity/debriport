@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container-fluid">    
         <img src="IMAGES/debriportlogul.png" alt="DEBRIPORT">
         </div>
     </div>
@@ -19,23 +19,35 @@
     <div class="container">
         <!-- Picture Buttons -->
         <div class="picSubmit">
-            <p class="stepText">First</p>
-            <button type="button" class="btn btn-secondary btn-lg"><i class="fas fa-camera"></i> Take a picture</button>
-            <p class="stepText">or</p>
-            <button type="button" class="btn btn-secondary btn-lg"><i class="far fa-images"></i> Choose from photo library</button>
+            <div class="row">
+                <p class="stepText">First</p>
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-secondary btn-lg"><i class="fas fa-camera"></i> Take a picture</button>
+            </div>
+            <div class="row">
+                <p class="stepText">or</p>
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-secondary btn-lg"><i class="far fa-images"></i> Choose from photo library</button>
+            </div>
         </div>
         <!-- Location Button -->
-        <div class="locButton">
+        <div class="row">
             <p class="stepText">Next</p>
+        </div>
+        <div class="row">    
             <button type="button" class="btn btn-secondary btn-lg"><i class="far fa-compass"></i> Get location</button>
         </div>
         <!-- Message Input -->
-        <div class="form-group">
+        <div class="row">
             <label for="stepText">Message:</label>
+        </div>
+        <div class="row">
             <textarea class="form-control" rows="5" id="comment" placeholder="tell us what you see, location details, or any other pertinent details of your submission..."></textarea>
         </div>
         <!-- Submit Button -->
-        <div>
+        <div class="row">
             <button type="button" class="btn btn-secondary btn-lg">Submit</button>
         </div>
     </div>
