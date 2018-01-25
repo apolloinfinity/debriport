@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../CSS/stylesOnePage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+        <img class="img-responsive logo" src="IMAGES/debriportlogul.png" alt="DEBRIPORT">
+        </div>
+    </div>
+    <div>
+      <h1 class="header">Making a Report</h1>
+    </div>
+
+    <div class="container">
+        <!-- Picture Buttons -->
+        <div class="picSubmit">
+            <div class="row">
+                <p class="stepText"> Step 1: Take a Photo</p>
+            </div>
+            <div class="row">
+                <button type="button" class="camera-button btn btn-secondary btn-lg"><i class="fas fa-camera"></i> Take a picture</button>
+            </div>
+            <div class="row">
+                <p class="stepText">Or Select from Photo Library</p>
+            </div>
+            <div class="row">
+                <button type="button" class="photo-library-button btn btn-secondary btn-lg"><i class="far fa-images"></i> Choose from photo library</button>
+            </div>
+        </div>
+        <!-- Location Button -->
+        <div class="row">
+            <p class="stepText">Step 2: Set Location</p>
+        </div>
+        <div class="row">
+            <button type="button" class="location-button btn btn-secondary btn-lg"><i class="far fa-compass"></i> Set location</button>
+        </div>
+        <div class="row">
+            <p class="stepText">Step 3: Enter a Description</p>
+        </div>
+        <!-- Message Input -->
+        <div class="row">
+            <label class="message-text" for="stepText">Message:</label>
+        </div>
+        <div class="row">
+            <textarea class="form-control" rows="5" id="comment" placeholder="tell us what you see, location details, or any other pertinent details of your submission..."></textarea>
+        </div>
+        <!-- Submit Button -->
+        <div class="row">
+            <button type="button" class="submit-button btn btn-secondary btn-lg">Submit</button>
+        </div>
+        <div class="row">
+            <p class="stepText">&copy; Debriport 2018</p>
+        </div>
+    </div>
+
+</body>
+</html>

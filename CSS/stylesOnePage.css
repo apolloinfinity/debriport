@@ -1,0 +1,56 @@
+body {
+  background-color: none;
+
+}
+
+.logo {
+  background-color: none;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+}
+
+.header {
+  text-decoration: underline;
+  text-align: center;
+  font-family: "Bebas Neue";
+}
+
+.camera-button {
+  margin: 0 auto;
+  width: 80%;
+  font-family: "Bebas Neue";
+}
+
+.photo-library-button {
+  margin: 0 auto;
+  width: 80%;
+  font-family: "Bebas Neue";
+}
+
+.location-button {
+  margin: 0 auto;
+  width: 80%;
+  font-family: "Bebas Neue";
+}
+
+.submit-button {
+  margin: 0 auto;
+  margin-top: 2%;
+  width: 80%;
+  font-family: "Bebas Neue";
+  padding-bottom: 5%;
+}
+
+.stepText {
+  margin: 0 auto;
+  padding: 2%;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+}
+
+.message-text {
+  margin-left: 1%;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+}
