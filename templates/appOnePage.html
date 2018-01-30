@@ -9,60 +9,63 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <title>Document</title>
 </head>
-<body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container-fluid">    
-        <img src="IMAGES/debriportlogul.png" alt="DEBRIPORT">
+<body class="body">
+        <div class="logo-container container-fluid">
+        <img class="img-responsive logo" src="../IMAGES/debriportlogul.png" alt="DEBRIPORT">
         </div>
+    <div>
+      <h1 class="header">Making a Report</h1>
     </div>
 
     <div class="container">
         <!-- Picture Buttons -->
         <div class="picSubmit">
             <div class="row">
-                <p class="stepText">First</p>
-            </div>
-            <div class"row">
-                <!-- Camera Access -->
-                <div class="col-md-4">
-                    <div id="mywebcam"></div>
-                        <p>
-                            <button onclick="takescreenshot()" class="btn btn-secondary btn-lg">Take a Picture</button>
-                        </p>
-                </div>
-                <div class="col-md-4">
-                    <div id="results"></div>
-                </div>
-                <!-- End Camera Access -->
+                <p class="stepText"> Step 1: Take a Photo</p>
             </div>
             <div class="row">
-                <p class="stepText">or</p>
+                <button type="button" class="camera-button btn btn-primary btn-lg"><i class="fas fa-camera"></i> Take a picture</button>
+            </div>
+              <!-- Camera Access -->
+              <div class="col-md-4">
+                  <div id="mywebcam"></div>
+              </div>
+              <div class="col-md-4">
+                  <div id="results"></div>
+              </div>
+              <!-- End Camera Access -->
+              <div class="row">
+                <p class="stepText">Or Select from Photo Library</p>
             </div>
             <div class="row">
-                <!-- Choose from Library -->
-                <button type="button" class="btn btn-secondary btn-lg"><i class="far fa-images"></i> Choose from photo library</button>
+                <button type="button" class="photo-library-button btn btn-primary btn-lg"><i class="far fa-images"></i> Choose from photo library</button>
             </div>
         </div>
         <!-- Location Button -->
         <div class="row">
-            <p class="stepText">Next</p>
+            <p class="stepText">Step 2: Set Location</p>
         </div>
-        <div class="row">    
-            <button type="button" class="btn btn-secondary btn-lg"><i class="far fa-compass"></i> Get location</button>
+        <div class="row">
+            <button type="button" class="location-button btn btn-primary btn-lg"><i class="far fa-compass"></i> Set location</button>
+        </div>
+        <div class="row">
+            <p class="stepText">Step 3: Enter a Description & Submit</p>
         </div>
         <!-- Message Input -->
         <div class="row">
-            <label for="stepText">Message:</label>
+            <label class="message-text" for="stepText">Message:</label>
         </div>
         <div class="row">
             <textarea class="form-control" rows="5" id="comment" placeholder="tell us what you see, location details, or any other pertinent details of your submission..."></textarea>
         </div>
         <!-- Submit Button -->
         <div class="row">
-            <button type="button" class="btn btn-secondary btn-lg">Submit</button>
+            <button type="button" class="submit-button btn btn-success btn-lg">Submit</button>
+        </div>
+        <div class="row">
+            <p class="stepText">&copy; Debriport 2018</p>
         </div>
     </div>
-    <script type="text/javascript" src="../JS/webcam.min.js"></script>
-    <script src="../JS/camera.js"></script>
+
 </body>
 </html>
