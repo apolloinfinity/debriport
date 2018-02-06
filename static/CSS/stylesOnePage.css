@@ -59,3 +59,21 @@
   font-family: "Bebas Neue";
   font-size: 30px;
 }
+
+/* Brad's additions */
+
+#results {
+  font-family: "Bebas Neue";
+}
+
+.camera {
+  display: flex;
+  justify-content: center;
+}
+
+#retake {
+  font-family: "Bebas Neue";
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
