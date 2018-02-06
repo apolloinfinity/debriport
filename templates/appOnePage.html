@@ -42,9 +42,10 @@
         <!-- Location Button -->
         <div class="row">
             <p class="stepText">Step 2: Set Location</p>
+            <div id="map"></div>
         </div>
         <div class="row">
-            <button type="button" class="location-button btn btn-primary btn-lg"><i class="far fa-compass"></i> Set location</button>
+            <button type="button" id="myloc getLoc" class="location-button btn btn-primary btn-lg"><i class="far fa-compass"></i> Set location</button>
         </div>
         <div class="row">
             <p class="stepText">Step 3: Enter a Description & Submit</p>
@@ -66,5 +67,9 @@
     </div>
     <script src="../static/JS/webcam.min.js"></script>
     <script src="../static/JS/camera.js"></script>
+    <script src="../static/JS/geolocation.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6T0lkYu-l9dOZ7YpHX9-8mYRa3Mt1gEM&callback=initMap">
+    </script>
 </body>
 </html>
