@@ -1,0 +1,68 @@
+body {
+  background-color: grey;
+  color: black;
+  background-image: url(../IMAGES/debriportlogo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: fixed;
+  background-attachment: fixed;
+  font-family: "Bebas Neue";
+  max-width: 100%;
+}
+/* Start Nav Bar Classes */
+.nav-icon {
+  max-width: 15%;
+}
+
+/* ul {
+  margin-left: 15%;
+  margin-right: 15%;
+  float:left;
+  list-style: none;
+  text-decoration: none;
+}
+
+li {
+  float: left;
+  list-style: none;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+
+}
+
+.red:hover {
+  color: red;
+  text-decoration: underline overline;
+  font-size: 30px;
+}
+.blue:hover {
+  color: blue;
+  text-decoration: underline overline;
+  font-size: 30px;
+}
+.green:hover {
+  color: green;
+  text-decoration: underline overline;
+  font-size: 30px;
+}
+.yellow:hover {
+  color: yellow;
+  text-decoration: underline overline;
+  font-size: 30px;
+}
+
+.copyright {
+  position: absolute;
+  margin-left: 45%;
+  margin-right: 38%;
+  font-size: 100%;
+} */
