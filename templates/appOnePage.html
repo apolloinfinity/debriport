@@ -23,16 +23,14 @@
             <div class="row">
                 <p class="stepText"> Step 1: Take a Photo</p>
             </div>
+            <!-- Camera Integration -->
             <div class="row">
-                <button type="button" class="camera-button btn btn-primary btn-lg"><i class="fas fa-camera"></i> Take a picture</button>
+                <div id="mywebcam" class="col-md-4 offset-md-4"></div>
+                <div id="results" class="col-md-4 offset-md-4"></div>
             </div>
-              <!-- Camera Access -->
-              <div class="col-md-4">
-                  <div id="mywebcam"></div>
-              </div>
-              <div class="col-md-4">
-                  <div id="results"></div>
-              </div>
+            <div class="row" id="camera-button">
+                <button onclick="takescreenshot()" type="button" class="camera-button btn btn-primary btn-lg"><i class="fas fa-camera"></i> Take a picture</button>
+            </div>
               <!-- End Camera Access -->
               <div class="row">
                 <p class="stepText">Or Select from Photo Library</p>
