@@ -30,6 +30,7 @@
   margin: 0 auto;
   width: 80%;
   font-family: "Bebas Neue";
+  margin-top: 2%;
 }
 
 .photo-library-button {
@@ -74,6 +75,7 @@
 .camera {
   display: flex;
   justify-content: center;
+  margin-bottom: 5%;
 }
 
 #retake {
@@ -84,8 +86,14 @@
 }
 
 /* Geolocation CSS */
-#map {
-        height: 400px;
-        width: 100%;
-        margin-bottom: 5%;
-       }
+/* Map canvas */
+#map_canvas {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+/* Get location button */
+#getLocButton {
+  
+}
