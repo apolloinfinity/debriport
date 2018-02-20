@@ -1,9 +1,50 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-    <div class="jumbotron text-center">
-        <h1>Welcome to Debriport</h1>
-        <p class="lead">This application is built on the Python Flask Framework.</p>
+<div class="picSubmit">
+    <div class="row">
+        <p class="stepText"> Step 1: Take a Photo</p>
     </div>
+    <!-- Camera Integration -->
+    <div class="row">
+        <div id="mywebcam" class="col-md-4 offset-md-4"></div>
+        <div id="results" class="col-md-4 offset-md-4"></div>
+    </div>
+    <div class="row" id="camera-button">
+        <button onclick="takescreenshot()" type="button" class="camera-button btn btn-primary btn-lg"><i class="fas fa-camera"></i> Take a picture</button>
+    </div>
+      <!-- End Camera Access -->
+      <div class="row">
+        <p class="stepText">Or Select from Photo Library</p>
+    </div>
+    <div class="row">
+        <button type="button" class="photo-library-button btn btn-primary btn-lg"><i class="far fa-images"></i> Choose from photo library</button>
+    </div>
+</div>
+<!-- Location Button -->
+<div class="row">
+    <p class="stepText">Step 2: Set Location</p>
+    <div id="map"></div>
+</div>
+<div class="row">
+    <button type="button" id="myloc getLoc" class="location-button btn btn-primary btn-lg"><i class="far fa-compass"></i> Set location</button>
+</div>
+<div class="row">
+    <p class="stepText">Step 3: Enter a Description & Submit</p>
+</div>
+<!-- Message Input -->
+<div class="row">
+    <label class="message-text" for="stepText">Message:</label>
+</div>
+<div class="row">
+    <textarea class="form-control" rows="5" id="comment" placeholder="tell us what you see, location details, or any other pertinent details of your submission..."></textarea>
+</div>
+<!-- Submit Button -->
+<div class="row">
+    <button type="button" class="submit-button btn btn-success btn-lg">Submit</button>
+</div>
+<div class="row">
+    <p class="stepText">&copy; Debriport 2018</p>
+</div>
 {% endblock %}
 
