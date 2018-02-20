@@ -46,11 +46,29 @@
             <div id="map_canvas"></div>
         </div>
         <div class="row">
-            <button type="button" id="getLocButton" class="location-button btn btn-primary btn-lg"><i class="far fa-compass"></i> Set location</button>
+            <button type="button" id="getLocButton" class="location-button btn btn-primary btn-lg collapsible"><i class="far fa-compass"></i> Set location</button>
+            <!-- code for collapsible content -->
+            <div class="content">
+      <form action="" method="post">
+        <div>
+            <label for="city">City:</label>
+            <input type="text" placeholder="Enter City" id="city" name="city">
         </div>
-        <div id="input" class="row">
-          
+        <div>
+            <label for="state">State:</label>
+            <input type="text" placeholder="Enter State" id="state" name="state">
         </div>
+        <div>
+            <label for="zip">Zip:</label>
+            <input type="text" placeholder="Enter Zip" id="zip" name="zip"></input>
+        </div>
+        <div>
+          <button type="submit" formaction="">Submit</button>
+        </div>
+    </form>
+    </div>
+        </div>
+
         <!-- Step 3 Instructions -->
         <div class="row">
             <p class="stepText">Step 3: Enter a Description & Submit</p>
@@ -64,7 +82,16 @@
         </div>
         <!-- Submit Button -->
         <div class="row">
-            <button type="button" class="submit-button btn btn-success btn-lg">Submit</button>
+            <button id="myBtnModal" type="submit" class="submit-button btn btn-success btn-lg">Submit</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+              <p>Thank you for your submission!</p>
+          </div>
         </div>
         <div class="row">
             <p class="stepText">&copy; Debriport 2018</p>
@@ -73,11 +100,5 @@
     <script src="../static/JS/webcam.min.js"></script>
     <script src="../static/JS/camera.js"></script>
     <script src="../static/JS/geolocation.js"></script>
-    <!-- <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6T0lkYu-l9dOZ7YpHX9-8mYRa3Mt1gEM&callback=initMap">
-    </script> -->
-    <!-- <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdzQzWD3FMw1jS5EoFM1zxeY9juTb731c&callback=initMap">
-    </script> -->
 </body>
 </html>
