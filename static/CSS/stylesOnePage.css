@@ -30,6 +30,7 @@
   margin: 0 auto;
   width: 80%;
   font-family: "Bebas Neue";
+  margin-top: 2%;
 }
 
 .photo-library-button {
@@ -74,6 +75,7 @@
 .camera {
   display: flex;
   justify-content: center;
+  margin-bottom: 5%;
 }
 
 #retake {
@@ -84,8 +86,97 @@
 }
 
 /* Geolocation CSS */
-#map {
-        height: 400px;
-        width: 100%;
-        margin-bottom: 5%;
-       }
+/* Map canvas */
+#map_canvas {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+/* Get location button */
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* input {
+  float: left;
+  margin-top: 5px;
+}
+
+label {
+  float: left;
+  padding: 10px;
+} */
+
+
+
+/* code for pop up modal */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 50%;
+    top: 50%;
+    transform:translate(35%,40%);
+    width: 60%; /* Full width */
+    height: 50%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%; /* Could be more or less, depending on screen size */
+    height: 100%;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,.3);
+}
+
+p {
+  font-size: 50px;
+  text-align: center;
+  margin: 40% auto;
+}
+
+/* The Close Button */
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
