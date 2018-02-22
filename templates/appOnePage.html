@@ -11,9 +11,9 @@
     <title>Make A Report</title>
 </head>
 <body class="body">
-        <div class="logo-container container-fluid">
+    <div class="logo-container container-fluid">
         <img class="img-responsive logo" src="../static/IMAGES/debriportlogul.png" alt="DEBRIPORT">
-        </div>
+    </div>
     <div>
       <h1 class="header">Making a Report</h1>
     </div>
@@ -22,19 +22,20 @@
         <!-- Picture Buttons -->
         <div class="picSubmit">
             <div class="row">
-                <p class="stepText"> Step 1: Take a Photo</p>
+                <p class="stepText"> Step 1: Take a Photo With Your Camera</p>
             </div>
+            <!-- Commented out Camera Access Feature.  Will continue to develop and impliment as soon as it is ready. -->
             <!-- Camera Integration -->
-            <div class="row">
+            <!-- <div class="row">
                 <div id="mywebcam" class="col-md-4 offset-md-4"></div>
                 <div id="results" class="col-md-4 offset-md-4"></div>
             </div>
             <div class="row" id="camera-button">
                 <button onclick="takescreenshot()" type="button" class="camera-button btn btn-primary btn-lg"><i class="fas fa-camera"></i> Take a picture</button>
-            </div>
+            </div> -->
               <!-- End Camera Access -->
-              <div class="row">
-                <p class="stepText">Or Select from Photo Library</p>
+            <div class="row">
+                <p class="stepText">Step 2: Select from Photo Library</p>
             </div>
             <div class="row">
                 <button type="button" class="photo-library-button btn btn-primary btn-lg"><i class="far fa-images"></i> Choose from photo library</button>
@@ -42,36 +43,36 @@
         </div>
         <!-- Location Button -->
         <div class="row">
-            <p class="stepText">Step 2: Set Location</p>
+            <p class="stepText">Step 3: Set Location</p>
             <div id="map_canvas"></div>
         </div>
         <div class="row">
             <button type="button" id="getLocButton" class="location-button btn btn-primary btn-lg collapsible"><i class="far fa-compass"></i> Set location</button>
             <!-- code for collapsible content -->
             <div class="content">
-      <form action="" method="post">
-        <div>
-            <label for="city">City:</label>
-            <input type="text" placeholder="Enter City" id="city" name="city">
-        </div>
-        <div>
-            <label for="state">State:</label>
-            <input type="text" placeholder="Enter State" id="state" name="state">
-        </div>
-        <div>
-            <label for="zip">Zip:</label>
-            <input type="text" placeholder="Enter Zip" id="zip" name="zip"></input>
-        </div>
-        <div>
-          <button type="submit" formaction="">Submit</button>
-        </div>
-    </form>
-    </div>
+                <form action="" method="post">
+                    <div>
+                        <label for="city">City:</label>
+                        <input type="text" placeholder="Enter City" id="city" name="city">
+                    </div>
+                    <div>
+                        <label for="state">State:</label>
+                        <input type="text" placeholder="Enter State" id="state" name="state">
+                    </div>
+                    <div>
+                        <label for="zip">Zip:</label>
+                        <input type="text" placeholder="Enter Zip" id="zip" name="zip">
+                    </div>
+                    <div>
+                        <button type="submit" formaction="">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <!-- Step 3 Instructions -->
         <div class="row">
-            <p class="stepText">Step 3: Enter a Description & Submit</p>
+            <p class="stepText">Step 4: Enter a Description & Submit</p>
         </div>
         <!-- Message Input -->
         <div class="row">
@@ -97,8 +98,10 @@
             <p class="stepText">&copy; Debriport 2018</p>
         </div>
     </div>
+    <!-- Commented out Camera Access Feature.  Will continue to develop and impliment as soon as it is ready.
     <script src="../static/JS/webcam.min.js"></script>
     <script src="../static/JS/camera.js"></script>
+     -->
     <script src="../static/JS/geolocation.js"></script>
 </body>
 </html>
